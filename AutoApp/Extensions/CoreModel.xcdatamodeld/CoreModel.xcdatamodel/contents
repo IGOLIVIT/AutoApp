@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CarsModel" representedClassName="CarsModel" syncable="YES" codeGenerationType="class">
+        <attribute name="caFuel" optional="YES" attributeType="String"/>
+        <attribute name="caMake" optional="YES" attributeType="String"/>
+        <attribute name="caModel" optional="YES" attributeType="String"/>
+        <attribute name="caYear" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ConsModel" representedClassName="ConsModel" syncable="YES" codeGenerationType="class">
+        <attribute name="conCar" optional="YES" attributeType="String"/>
+        <attribute name="conCat" optional="YES" attributeType="String"/>
+        <attribute name="conDate" optional="YES" attributeType="String"/>
+        <attribute name="conSpent" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ServModel" representedClassName="ServModel" syncable="YES" codeGenerationType="class">
+        <attribute name="seCar" optional="YES" attributeType="String"/>
+        <attribute name="seDate" optional="YES" attributeType="String"/>
+        <attribute name="seMil" optional="YES" attributeType="String"/>
+        <attribute name="seType" optional="YES" attributeType="String"/>
+    </entity>
+</model>
