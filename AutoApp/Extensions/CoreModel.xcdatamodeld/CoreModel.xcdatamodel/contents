@@ -16,6 +16,7 @@
         <attribute name="seCar" optional="YES" attributeType="String"/>
         <attribute name="seDate" optional="YES" attributeType="String"/>
         <attribute name="seMil" optional="YES" attributeType="String"/>
+        <attribute name="seOwn" optional="YES" attributeType="String"/>
         <attribute name="seType" optional="YES" attributeType="String"/>
     </entity>
 </model>

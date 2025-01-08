@@ -100,6 +100,19 @@ struct ServiceView: View {
                                     
                                     HStack {
                                         
+                                        Text("Number of owners")
+                                            .foregroundColor(.black)
+                                            .font(.system(size: 14, weight: .medium))
+                                        
+                                        Spacer()
+                                        
+                                        Text(index.seOwn ?? "")
+                                            .foregroundColor(.black)
+                                            .font(.system(size: 14, weight: .medium))
+                                    }
+                                    
+                                    HStack {
+                                        
                                         Text("Car mileage")
                                             .foregroundColor(.black)
                                             .font(.system(size: 14, weight: .medium))

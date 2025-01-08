@@ -104,26 +104,58 @@ struct AddService: View {
                         .frame(maxWidth: .infinity)
                         .background(RoundedRectangle(cornerRadius: 7).fill(.gray.opacity(0.2)))
                         
-                        Text("Date")
-                            .foregroundColor(.black)
-                            .font(.system(size: 15, weight: .medium))
-                        
-                        ZStack(content: {
+                        HStack {
                             
-                            Text("12/12/2024")
-                                .foregroundColor(.gray)
-                                .font(.system(size: 14, weight: .regular))
-                                .opacity(viewModel.seDate.isEmpty ? 1 : 0)
-                                .frame(maxWidth: .infinity, alignment: .leading)
+                            VStack(alignment: .leading) {
+                                
+                                Text("Date")
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 15, weight: .medium))
+                                
+                                ZStack(content: {
+                                    
+                                    Text("12/12/2024")
+                                        .foregroundColor(.gray)
+                                        .font(.system(size: 14, weight: .regular))
+                                        .opacity(viewModel.seDate.isEmpty ? 1 : 0)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    
+                                    TextField("", text: $viewModel.seDate)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 16, weight: .regular))
+                                    
+                                })
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(RoundedRectangle(cornerRadius: 7).fill(.gray.opacity(0.2)))
+                                
+                            }
                             
-                            TextField("", text: $viewModel.seDate)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 16, weight: .regular))
-                            
-                        })
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(RoundedRectangle(cornerRadius: 7).fill(.gray.opacity(0.2)))
+                            VStack(alignment: .leading) {
+
+                                Text("Number of owners")
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 15, weight: .medium))
+                                
+                                ZStack(content: {
+                                    
+                                    Text("0")
+                                        .foregroundColor(.gray)
+                                        .font(.system(size: 14, weight: .regular))
+                                        .opacity(viewModel.seOwn.isEmpty ? 1 : 0)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    
+                                    TextField("", text: $viewModel.seOwn)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 16, weight: .regular))
+                                    
+                                })
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(RoundedRectangle(cornerRadius: 7).fill(.gray.opacity(0.2)))
+                                
+                            }
+                        }
 
                         Text("Car")
                             .foregroundColor(.black)

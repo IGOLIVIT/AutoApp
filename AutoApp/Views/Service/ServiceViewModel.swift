@@ -65,6 +65,7 @@ final class ServiceViewModel: ObservableObject {
     @Published var seDate: String = ""
     @Published var seCar: String = ""
     @Published var seType: String = ""
+    @Published var seOwn: String = ""
 
     @Published var services: [ServModel] = []
     @Published var selectedServ: ServModel?
@@ -78,6 +79,7 @@ final class ServiceViewModel: ObservableObject {
         loan.seDate = seDate
         loan.seCar = seCar
         loan.seType = seType
+        loan.seOwn = seOwn
 
         CoreDataStack.shared.saveContext()
     }
